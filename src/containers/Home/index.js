@@ -7,6 +7,7 @@ import Company from "../../components/company";
 import NftComponents from "../../components/nftsComp";
 import Cards from "../../components/cards";
 import { cardData } from "../../utils/cardData";
+import HomeCard from "../../components/homeCard";
 
 const Home = () => {
 	return (
@@ -44,14 +45,14 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="main-section_second card-format">
-						<Card {...cardData} />
+						<HomeCard/>
 					</div>
 				</div>
 				<div>
 					<Company />
 				</div>
 				<NftComponents />
-				<Cards />
+				{/* <Cards /> */}
 			</section>
 		</>
 	);

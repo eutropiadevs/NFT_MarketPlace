@@ -1,0 +1,20 @@
+
+
+.single-card{
+    width: 250px;
+    height: 220px;
+    position: relative;
+    
+    &_container{
+        position: absolute;
+        width: 100%;
+        z-index: 11;
+        top: 67%;
+        background: rgba(255, 0, 0, 0.636);
+        padding: 1rem 0;
+    }
+    img{
+       width: 100%;
+       height: 100%;
+    }
+}

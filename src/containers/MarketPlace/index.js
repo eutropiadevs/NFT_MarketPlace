@@ -1,12 +1,23 @@
 import React from "react";
+import Cards from "../../components/cards";
+import MarketCard from "../../components/marketCards";
+import Market from "../../components/marketPlaceCard";
+import { market } from "../../utils/marketCard";
+import './index.scss'
 
 const MarketPlace = () => {
+  
 	return (
 		<>
-			<div></div>
+			<div>
+				<div className="market-section">
+					<Market />
+					<MarketCard />
+				</div>
+                <Cards/>
+			</div>
 		</>
 	);
 };
 
 export default MarketPlace;
-// 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;
