@@ -1,11 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 import './index.scss'
 
 const Navbar = () => {
 
-const [open, setOpen] = useState(false);
   return (
 		<>
 			<div className="navbar_main_container">
@@ -38,7 +36,7 @@ const [open, setOpen] = useState(false);
 									</li>
 									<li>
 										<NavLink
-											to="/ibc_transfer"
+											to="/"
 											// style={({ isActive }) =>
 											// 	isActive ? activeStyle : undefined
 											// }
@@ -48,7 +46,7 @@ const [open, setOpen] = useState(false);
 									</li>
 									<li>
 										<NavLink
-											to="/ibc_transfer"
+											to="/"
 											// style={({ isActive }) =>
 											// 	isActive ? activeStyle : undefined
 											// }

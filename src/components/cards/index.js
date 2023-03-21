@@ -5,7 +5,7 @@ import { cardData } from '../../utils/cardData'
 
 
 const Cards = () => {
-    console.log(cardData)
+   
   return (
 		<>
 			<div className="latest-drop">

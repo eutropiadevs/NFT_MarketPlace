@@ -9,20 +9,19 @@ import diamond from "../../assets/img/diamond.jpg";
 import { single } from "../../utils/marketCard";
 
 const SingleCard = () => {
-	console.log(single.text1);
 
 	return (
 		<>
 			<div key={single.id} className="card-section card-summary">
 				<div className="card-section_img">
-					<img className="main-img" src={diamond} alt={diamond} />
+					<img className="main-img" src={diamond} alt="diamond" />
 				</div>
 				<div className="card-section_info">
 					<div className="person-img">
-						<img src={img1} />
-						<img src={img2} />
-						<img src={img3} />
-						<img src={img4} />
+						<img src={img1} alt="img" />
+						<img src={img2} alt="img1" />
+						<img src={img3} alt="img2" />
+						<img src={img4} alt="img3" />
 					</div>
 					<div className="info-container">
 						<div className="info-container_first">

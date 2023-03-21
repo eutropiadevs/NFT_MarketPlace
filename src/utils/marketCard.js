@@ -1,9 +1,7 @@
-import img1 from '../assets/img/img1.jpg'
-import img2 from '../assets/img/img2.jpg'
-import img3 from '../assets/img/img3.jpg'
-import img4 from '../assets/img/img4.jpg'
-
-
+import img1 from "../assets/img/img1.jpg";
+import img2 from "../assets/img/img2.jpg";
+import img3 from "../assets/img/img3.jpg";
+import img4 from "../assets/img/img4.jpg";
 
 export const market = [
 	{
@@ -48,15 +46,13 @@ export const market = [
 	},
 ];
 
-
 export const single = {
-
-		id: 1,
-		text1: "MYSTICFIGURE#01",
-		para: "Toalyg",
-		btn: "Place a bid",
-		text2: "1.00ETH",
-		para1: "$3,618.36",
-		btn1: "View Artwork",
-		img: img1,
-	};
+	id: 1,
+	text1: "MYSTICFIGURE#01",
+	para: "Toalyg",
+	btn: "Place a bid",
+	text2: "1.00ETH",
+	para1: "$3,618.36",
+	btn1: "View Artwork",
+	img: img1,
+};

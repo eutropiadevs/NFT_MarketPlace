@@ -9,7 +9,7 @@ export const cardData = [
 		btn1: "View Artwork",
 	},
 	{
-		id: 1,
+		id: 2,
 		text1: "MYSTICFIGURE#01",
 		para: "Toalyg",
 		btn: "Place a bid",
@@ -18,7 +18,7 @@ export const cardData = [
 		btn1: "View Artwork",
 	},
 	{
-		id: 1,
+		id: 3,
 		text1: "100ETHICON#01",
 		para: "Toaling wang",
 		btn: "Place a bid",
@@ -27,7 +27,7 @@ export const cardData = [
 		btn1: "View Artwork",
 	},
 	{
-		id: 1,
+		id: 4,
 		text1: "100ETHICON#01",
 		para: "Toaling wang",
 		btn: "Place a bid",
@@ -36,7 +36,7 @@ export const cardData = [
 		btn1: "View Artwork",
 	},
 	{
-		id: 1,
+		id: 5,
 		text1: "100ETHICON#01",
 		para: "Toaling wang",
 		btn: "Place a bid",

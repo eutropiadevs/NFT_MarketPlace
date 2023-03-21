@@ -7,20 +7,20 @@ import img4 from "../../assets/img/img4.jpg";
 import diamond from '../../assets/img/diamond.jpg'
 
 const Card = ({text1, para, btn, text2, para1, btn1}) => {
-	console.log(text1)
+	
   return (
 		<>
 			<div className="card-section">
 				
 					<div className="card-section_img">
-						<img className="main-img" src={diamond} alt={diamond} />
+						<img className="main-img" src={diamond} alt='diamond' />
 					</div>
 					<div className='card-section_info'>
 						<div className="person-img">
-							<img src={img1}/>
-							<img src={img2}/>
-							<img src={img3}/>
-							<img src={img4}/>
+							<img src={img1} alt='img'/>
+							<img src={img2} alt='img1'/>
+							<img src={img3} alt='img2'/>
+							<img src={img4} alt='img3'/>
 						</div>
 						<div className='info-container'>
 							<div className='info-container_first'>
