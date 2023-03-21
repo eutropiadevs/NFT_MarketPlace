@@ -1,0 +1,34 @@
+.card-nfts{
+      padding: 2rem;
+    h1{
+        text-align: center;
+    }
+    &_container{
+        display: flex;
+        max-width: 70vw;
+        margin: auto;
+        gap: 1rem;
+        .card{
+            border: 1px solid black;
+            padding: 1.4rem 1.2rem;
+        }
+    }
+    &_title {
+        padding-top: 1rem;
+        h5{
+            padding: 1rem 0;
+        }
+       p{
+        font-size: 0.8rem;
+       }
+    }
+}
+
+.card-pink{
+    color: rgb(226, 26, 139);
+    font-size: 2rem;
+}
+.card-blue{
+    color: rgb(0, 119, 255);
+     font-size: 2rem;
+}

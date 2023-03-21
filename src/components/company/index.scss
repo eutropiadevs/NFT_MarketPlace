@@ -1,0 +1,16 @@
+.client-section{
+  background: rgba(0, 0, 0, 0.343);
+    &_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.6rem;
+    padding: 4rem 0;
+    .item{
+         span{
+        margin-right: 10px;
+    }
+    }
+    }
+}

@@ -1,0 +1,24 @@
+.latest-drop{
+    width: 70vw;
+    margin: auto;
+    //  overflow: scroll;
+    &_cards{
+         overflow: scroll;
+        &_flow{
+ display: flex;
+    gap: 1rem;
+   
+        }
+        
+    // width: 70vw;
+    }
+    &_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+}
+.demo{
+    width: 380px;
+}

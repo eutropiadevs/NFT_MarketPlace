@@ -1,0 +1,70 @@
+.main-container {
+	// transform: translateY(-20%);
+	// height: 100vh;
+	// max-height: 800px;
+}
+
+.main-section {
+	// transform: translateY(-10%);
+	display: flex;
+	// height: 100vh;
+	// padding-top: 4rem;
+	&_first {
+		width: 60vw;
+		padding: 200px 130px 0 150px;
+		// transform: translateY(10%);
+		background: rgba(102, 51, 153, 0.453);
+		// flex: 1;
+		.first-content {
+			h1 {
+				font-size: 4rem;
+				line-height: 4rem;
+			}
+		}
+		.content-para {
+			p {
+				padding: 30px 0;
+			}
+		}
+
+		.section-a {
+			display: flex;
+			padding: 50px 0;
+			gap: 1.4rem;
+			h3 {
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 0.7rem;
+			}
+		}
+		.flex-hr {
+			display: flex;
+			gap: 2rem;
+		}
+	}
+	&_second {
+		// background: rgba(255, 0, 0, 0.495);
+		 transform: translate(0%, 16%);
+		// flex: 0.8;
+		width: 40vw;
+		padding: 90px 0;
+		// .person-img {
+		// 	display: flex;
+		// 	img {
+		// 		box-sizing: content-box;
+		// 		height: 2rem;
+		// 		width: 2rem;
+		// 		border-radius: 50%;
+		// 		border: 1px solid #fff;
+
+		// 		&:not(:last-child) {
+		// 			margin-right: -1rem;
+		// 		}
+		// 	}
+		// }
+	}
+	.card-format{
+		padding-left: 100px;
+	}
+}
