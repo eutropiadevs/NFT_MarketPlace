@@ -1,5 +1,4 @@
 import React from 'react'
-import HomeCard from '../homeCard'
 import SingleCard from '../single';
 import './index.scss'
 

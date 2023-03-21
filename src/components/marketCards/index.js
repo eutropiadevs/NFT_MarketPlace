@@ -8,9 +8,9 @@ const MarketCard = () => {
   return (
 		<>
 			<div className='market-container'>
-				{market.map((item) => {
+				{market.map((item, index) => {
 					return (
-						<div key={item.id} >
+						<div key={index} >
                             <SingleCard {...item}/>
                         </div>
 					);

@@ -1,12 +1,8 @@
 import React from "react";
-import Navbar from "../NavigationBar";
 import "./index.scss";
 import { data } from "../../utils/data";
-import Card from "../../components/card";
 import Company from "../../components/company";
 import NftComponents from "../../components/nftsComp";
-import Cards from "../../components/cards";
-import { cardData } from "../../utils/cardData";
 import HomeCard from "../../components/homeCard";
 
 const Home = () => {
@@ -45,7 +41,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="main-section_second card-format">
-						<HomeCard/>
+						<HomeCard />
 					</div>
 				</div>
 				<div>
