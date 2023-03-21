@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const MarketPlace = () => {
-  return (
-    <>
-     <div>
-        
-     </div>
-    </>
-  )
-}
+	return (
+		<>
+			<div></div>
+		</>
+	);
+};
 
-export default MarketPlace
+export default MarketPlace;
+// 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;

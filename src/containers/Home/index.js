@@ -1,14 +1,15 @@
-import React from 'react'
-import Navbar from '../NavigationBar';
-import './index.scss'
-import { data } from '../../utils/data';
-import Card from '../../components/card';
-import Company from '../../components/company';
-import NftComponents from '../../components/nftsComp';
-import Cards from '../../components/cards';
+import React from "react";
+import Navbar from "../NavigationBar";
+import "./index.scss";
+import { data } from "../../utils/data";
+import Card from "../../components/card";
+import Company from "../../components/company";
+import NftComponents from "../../components/nftsComp";
+import Cards from "../../components/cards";
+import { cardData } from "../../utils/cardData";
 
 const Home = () => {
-  return (
+	return (
 		<>
 			<section className="main-container">
 				<div className="main-section">
@@ -43,17 +44,17 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="main-section_second card-format">
-						<Card/>
+						<Card {...cardData} />
 					</div>
 				</div>
 				<div>
-					<Company/>
+					<Company />
 				</div>
-				<NftComponents/>
-				<Cards/>
+				<NftComponents />
+				<Cards />
 			</section>
 		</>
 	);
-}
+};
 
-export default Home
+export default Home;

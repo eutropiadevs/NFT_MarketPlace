@@ -6,7 +6,8 @@ import img3 from "../../assets/img/img3.jpg";
 import img4 from "../../assets/img/img4.jpg";
 import diamond from '../../assets/img/diamond.jpg'
 
-const Card = () => {
+const Card = ({text1, para, btn, text2, para1, btn1}) => {
+	console.log(text1)
   return (
 		<>
 			<div className="card-section">
@@ -23,14 +24,14 @@ const Card = () => {
 						</div>
 						<div className='info-container'>
 							<div className='info-container_first'>
-								<h5>100ETHICON#01</h5>
-								<p>Toaling wang</p>
-								<button>Place a Bid</button>
+								<h5>{text1}</h5>
+								<p>{para}</p>
+								<button>{btn}</button>
 							</div>
 							<div className='info-container_second align'>
-								<h3>1.00ETH</h3>
-								<p>$3,618.36</p>
-								<button>View Artwork</button>
+								<h3>{text2}</h3>
+								<p>{para1}</p>
+								<button>{btn1}</button>
 							</div>
 						</div>
 					</div>

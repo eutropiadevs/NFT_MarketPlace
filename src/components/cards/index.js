@@ -1,9 +1,11 @@
 import React from 'react'
 import Card from '../card'
 import './index.scss'
+import { cardData } from '../../utils/cardData'
 
 
 const Cards = () => {
+    console.log(cardData)
   return (
 		<>
 			<div className="latest-drop">
@@ -15,7 +17,12 @@ const Cards = () => {
 				</div>
 				<div className="latest-drop_cards">
 					<div className="latest-drop_cards_flow">
-						<div className="card-width">
+						{cardData.map(item=>{
+                            return <div className="card-width" key={item.id}>
+                                <Card {...item}/>
+                            </div>;
+                        })}
+						{/* <div className="card-width">
 							<Card />
 						</div>
 						<div className="card-width">
@@ -26,10 +33,7 @@ const Cards = () => {
 						</div>
 						<div className="card-width">
 							<Card />
-						</div>
-						<div className="card-width">
-							<Card />
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
