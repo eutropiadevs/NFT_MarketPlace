@@ -49,6 +49,7 @@ const Home = () => {
 				</div>
 				<NftComponents />
 				{/* <Cards /> */}
+			
 			</section>
 		</>
 	);

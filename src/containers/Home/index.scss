@@ -2,6 +2,27 @@
 	// transform: translateY(-20%);
 	// height: 100vh;
 	// max-height: 800px;
+	// width: 10vw;
+}
+
+
+@media (max-width: 600px){
+	.main-section{
+		// display: block;
+		flex-direction: column;
+	}
+	.main-section_first{
+		// width: 100%;
+		font-size: 1rem;
+		padding: 0%;
+	}
+	.first-content {
+			h1 {
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+		}
+	
 }
 
 .main-section {
@@ -11,7 +32,7 @@
 	// padding-top: 4rem;
 	&_first {
 		width: 60vw;
-		padding: 200px 130px 0 150px;
+		padding: 6rem;
 		// transform: translateY(10%);
 		background: rgba(102, 51, 153, 0.453);
 		// flex: 1;
@@ -45,10 +66,10 @@
 	}
 	&_second {
 		// background: rgba(255, 0, 0, 0.495);
-		 transform: translate(0%, 16%);
+		//  transform: translate(0%, 0%);
 		// flex: 0.8;
-		width: 40vw;
-		padding: 90px 0;
+		// width: 40vw;
+		padding: 10rem 10rem;
 		// .person-img {
 		// 	display: flex;
 		// 	img {

@@ -7,6 +7,7 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$3,618.36",
 		btn1: "View Artwork",
+		featured: 'newProduct'
 	},
 	{
 		id: 2,
