@@ -5,7 +5,6 @@ import Market from "../../components/marketPlaceCard";
 import './index.scss'
 
 const MarketPlace = () => {
-  
 	return (
 		<>
 			<div>

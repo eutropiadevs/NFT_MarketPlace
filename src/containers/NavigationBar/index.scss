@@ -10,6 +10,15 @@
   background-color: rgba(98, 94, 94, 0.596);
   color: #fff;
   z-index: 11;
+  .connect-btn{
+    background: rgb(255, 119, 119);
+    border-radius: 6px;
+    transition: .4s;
+  }
+  .connect-btn:hover{
+    border: 2px solid rgb(255, 119, 119);
+    background: none;
+  }
 }
 
 .navbar-brand {
@@ -72,14 +81,19 @@
     border: none;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    right: 10%;
+  }
+  .navbar-toggle:hover{
+    background: none;
   }
 
   .navbar-toggle-icon {
     display: block;
-    width: 20px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background-color: #fff;
-    margin: 3px 0;
+    margin: auto;
   }
 
   .navbar-menu {

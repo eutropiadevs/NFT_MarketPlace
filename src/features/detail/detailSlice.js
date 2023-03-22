@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-
 import { market } from "../../utils/marketCard";
+import { cardData } from "../../utils/cardData";
 
 const initialState = {
     market: market,
+    cardData: cardData,
    singleItem: {},
    singleDisplay: {}
 };
@@ -21,8 +21,10 @@ const detailSlice = createSlice({
           
         },
 
-        display: (state)=>{
-            state.singleDisplay = state.singleItem
+        display: (state, action)=>{
+           state.singleItem = cardData.find(item =>{
+               return item.id === action.payload;
+            })
 
         }
     }

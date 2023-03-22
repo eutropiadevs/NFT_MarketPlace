@@ -1,16 +1,16 @@
-
-.market-section{
-    display: flex;
-    height: 110vh;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.market-section {
+	display: flex;
+	height: 110vh;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+    background: rgba(44, 38, 161, 0.397);
+    margin-bottom: 2rem;
 }
 
-@media (max-width:800px){
-    .market-section{
-        flex-direction: column-reverse;
-        // justify-content: flex-start;
-        padding-top: 20rem;
-    }
+@media (max-width: 800px) {
+	.market-section {
+		flex-direction: column-reverse;
+		padding-top: 20rem;
+	}
 }
