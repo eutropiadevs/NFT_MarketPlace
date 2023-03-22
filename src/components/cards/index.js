@@ -1,12 +1,32 @@
-import React from 'react'
-import Card from '../card'
-import './index.scss'
-import { cardData } from '../../utils/cardData'
-
+import React, { useEffect, useState, useRef } from "react";
+import Card from "../card";
+import "./index.scss";
+import { cardData } from "../../utils/cardData";
 
 const Cards = () => {
-   
-  return (
+	const containerRef = useRef(null);
+
+	useEffect(() => {
+		const container = containerRef.current;
+
+		let scrollInterval = setInterval(() => {
+			container.scroll({
+				left: container.scrollLeft + 40, // adjust the scrolling speed by changing this value
+				behavior: "smooth",
+			});
+
+			if (
+				container.scrollLeft + container.clientWidth >=
+				container.scrollWidth
+			) {
+				container.scrollLeft = 0;
+			}
+		}, 1000); // adjust the interval duration by changing this value
+
+		return () => clearInterval(scrollInterval);
+	}, []);
+
+	return (
 		<>
 			<div className="latest-drop">
 				<div className="latest-drop_title">
@@ -16,13 +36,20 @@ const Cards = () => {
 					</div>
 				</div>
 				<div className="latest-drop_cards">
-					<div className="latest-drop_cards_flow">
-						{cardData.map(item=>{
-                            return <div className="card-width" key={item.id}>
-                                <Card {...item}/>
-                            </div>;
-                        })}
-						{/* <div className="card-width">
+					<div
+						className="latest-drop_cards_flow"
+						ref={containerRef}
+						style={{ overflow: "scroll", behavior: "smooth" }}
+					>
+						{cardData.map((item, index) => {
+							return (
+								<div className="card-width" key={index}>
+									<Card {...item} />
+								</div>
+							);
+						})}
+					</div>
+					{/* <div className="card-width">
 							<Card />
 						</div>
 						<div className="card-width">
@@ -34,11 +61,11 @@ const Cards = () => {
 						<div className="card-width">
 							<Card />
 						</div> */}
-					</div>
+					{/* </div> */}
 				</div>
 			</div>
 		</>
 	);
-}
+};
 
-export default Cards
+export default Cards;

@@ -1,0 +1,40 @@
+.tabs {
+	display: flex;
+	flex-direction: column;
+	max-width: 60rem;
+	margin: 3rem auto;
+	background: rgba(208, 208, 208, 0.29);
+	padding: 1rem;
+
+	&__buttons {
+		display: flex;
+		border-bottom: 1px solid rgb(202, 202, 202);
+		gap: 1rem;
+		// padding-bottom: 10px;
+
+		&__button {
+			background-color: transparent;
+			color: black;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 5px 10px;
+		}
+	}
+
+	&__content {
+		font-size: 18px;
+        padding: 1rem;
+	}
+	.tabs__button {
+		background-color: transparent;
+		border-radius: 0%;
+		color: black;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+	}
+	.active {
+		border-bottom: 2px solid blue;
+	}
+}

@@ -16,6 +16,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 1rem;
+        padding: .2rem;
+        h1{
+            border-bottom: 3px solid gray;
+        }
     }
    
 }
