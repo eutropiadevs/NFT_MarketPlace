@@ -8,13 +8,20 @@
         position: absolute;
         width: 100%;
         z-index: 11;
-        top: -200%;
+        top: -170%;
         background: rgba(255, 0, 0, 0.636);
-        padding: 0.4rem 0;
+        padding: 0.6rem 0.3rem;
+        color: #fff;
+        h3{
+            font-size: .8rem;
+        }
+        p{
+            font-size: .7rem;
+        }
     }
     img{
        width: 15rem;
        height: 14rem;
-       border-radius: 5px;
+       border-radius: 4px;
     }
 }
