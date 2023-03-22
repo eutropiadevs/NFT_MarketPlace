@@ -1,24 +1,18 @@
-.main-container {
-	// transform: translateY(-20%);
-	// height: 100vh;
-	// max-height: 800px;
-	// width: 10vw;
-}
 
 
-@media (max-width: 600px){
+@media (max-width: 809px){
 	.main-section{
-		// display: block;
 		flex-direction: column;
 	}
 	.main-section_first{
-		// width: 100%;
+		max-width: 100%;
+		margin: auto;
 		font-size: 1rem;
-		padding: 0%;
 	}
 	.first-content {
+		width: 100%;
 			h1 {
-				font-size: 2rem;
+				font-size: 1rem;
 				line-height: 3rem;
 			}
 		}
@@ -26,17 +20,18 @@
 }
 
 .main-section {
+	background: rgba(102, 51, 153, 0.453);
 	// transform: translateY(-10%);
 	display: flex;
 	// height: 100vh;
 	// padding-top: 4rem;
 	&_first {
-		width: 60vw;
+		width: 40%;
 		padding: 6rem;
-		// transform: translateY(10%);
-		background: rgba(102, 51, 153, 0.453);
+		// background: rgba(102, 51, 153, 0.453);
 		// flex: 1;
 		.first-content {
+
 			h1 {
 				font-size: 4rem;
 				line-height: 4rem;
@@ -65,11 +60,11 @@
 		}
 	}
 	&_second {
-		// background: rgba(255, 0, 0, 0.495);
+		// background: #fff;
 		//  transform: translate(0%, 0%);
 		// flex: 0.8;
 		// width: 40vw;
-		padding: 10rem 10rem;
+		margin: 10rem auto;
 		// .person-img {
 		// 	display: flex;
 		// 	img {
@@ -85,7 +80,7 @@
 		// 	}
 		// }
 	}
-	.card-format{
-		padding-left: 100px;
-	}
+	// .card-format{
+	// 	padding-left: 100px;
+	// }
 }
