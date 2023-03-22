@@ -1,3 +1,11 @@
+@media (max-width: 600px){
+    .card-nfts_container{
+        flex-direction: column;
+    }
+}
+
+
+
 .card-nfts{
       padding: 2rem;
     h1{

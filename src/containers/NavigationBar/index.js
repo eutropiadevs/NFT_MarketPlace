@@ -1,10 +1,11 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
-import './index.scss'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./index.scss";
 
 const Navbar = () => {
+	// const [open, setOpen] = useState(false);
 
-  return (
+	return (
 		<>
 			<div className="navbar_main_container">
 				<div className="max_width">
@@ -14,70 +15,76 @@ const Navbar = () => {
 						</div>
 						{/* <div className="toggle" onClick={() => setOpen(!open)}>
 							<p>Logo</p>
-						</div>
-						<div className={open ? "links_container new" : "links_container"}>
+						</div> */}
+						{/* <div className={open ? "links_container new" : "links_container"}>
 							{open && (
 								<div className="close-btn" onClick={() => setOpen(!open)}>
 									&#9747;
 								</div>
 							)} */}
-						<div className="links_container">
-							<div className="links">
-								<ul>
-									<li>
-										<NavLink
-											to="/marketPlace"
-											// style={({ isActive }) =>
-											// 	isActive ? activeStyle : undefined
-											// }
-										>
-											MarketPlace
-										</NavLink>
-									</li>
-									<li>
-										<NavLink
-											to="/"
-											// style={({ isActive }) =>
-											// 	isActive ? activeStyle : undefined
-											// }
-										>
-											Artists
-										</NavLink>
-									</li>
-									<li>
-										<NavLink
-											to="/"
-											// style={({ isActive }) =>
-											// 	isActive ? activeStyle : undefined
-											// }
-										>
-											Community
-										</NavLink>
-									</li>
-									<div className="button_container">
-										<div>
-											{/* <Dropdown
+							<div className="links_container">
+								<div className="links">
+									<ul>
+										<li>
+											<NavLink
+												to="/marketPlace"
+												// style={({ isActive }) =>
+												// 	isActive ? activeStyle : undefined
+												// }
+											>
+												MarketPlace
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="/"
+												// style={({ isActive }) =>
+												// 	isActive ? activeStyle : undefined
+												// }
+											>
+												Artists
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="/"
+												// style={({ isActive }) =>
+												// 	isActive ? activeStyle : undefined
+												// }
+											>
+												Community
+											</NavLink>
+										</li>
+										<div className="button_container">
+											<div>
+												{/* <Dropdown
 													overlay={WalletConnectedDropdown}
 													placement="bottomRight"
 													trigger={["click"]}
 												> */}
-											<div shape="round" type="primary" className="btn-filled">
-												{/* <ConnectButton /> */}
+												<div
+													shape="round"
+													type="primary"
+													className="btn-filled"
+												>
+													{/* <ConnectButton /> */}
+													Connect
+												</div>
+												{/* </Dropdown> */}
 											</div>
-											{/* </Dropdown> */}
 										</div>
-									</div>
-								</ul>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div className="btn-container">
-							<button>Register</button>
-						</div>
+							<div className="btn-container">
+								<button>Register</button>
+							</div>
+						{/* </div> */}
 					</div>
 				</div>
 			</div>
 		</>
 	);
-}
+};
 
-export default Navbar
+export default Navbar;

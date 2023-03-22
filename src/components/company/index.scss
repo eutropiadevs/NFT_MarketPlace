@@ -1,3 +1,11 @@
+@media (max-width: 600px){
+  .client-section_item{
+    flex-direction: column;
+  }
+}
+
+
+
 .client-section{
   background: rgba(0, 0, 0, 0.343);
     &_item{
