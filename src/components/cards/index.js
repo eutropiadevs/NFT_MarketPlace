@@ -11,7 +11,7 @@ const Cards = () => {
 
 		let scrollInterval = setInterval(() => {
 			container.scroll({
-				left: container.scrollLeft + 40, // adjust the scrolling speed by changing this value
+				left: container.scrollLeft + 40, 
 				behavior: "smooth",
 			});
 
@@ -21,7 +21,7 @@ const Cards = () => {
 			) {
 				container.scrollLeft = 0;
 			}
-		}, 1000); // adjust the interval duration by changing this value
+		}, 1000); 
 
 		return () => clearInterval(scrollInterval);
 	}, []);

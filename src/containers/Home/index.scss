@@ -9,14 +9,10 @@
 }
 
 .main-section {
-	background: rgba(102, 51, 153, 0.453);
-	// transform: translateY(-10%);
+	background: rgba(58, 40, 190, 0.529);
 	display: flex;
 	&_first {
-		// width: 36rem;
 		padding: 6rem;
-		// background: rgba(102, 51, 153, 0.453);
-		// flex: 1;
 		.first-content {
 			h1 {
 				font-size: 4rem;
@@ -33,8 +29,11 @@
 
 		.section-a {
 			display: flex;
-			padding: 50px 0;
+			width: 300px;
+			margin-top: 3rem;
+			padding: 1rem .7rem;
 			gap: 1.4rem;
+			background: rgba(230, 230, 230, 0.329);
 			h3 {
 				font-size: 1.6rem;
 			}

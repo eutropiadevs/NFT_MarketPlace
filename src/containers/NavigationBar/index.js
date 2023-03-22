@@ -28,7 +28,7 @@ const Navbar = () => {
 						<li className="nav-item">
 							<a href="/creator">Creator</a>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item connect-btn">
 							<a href="/connect">Connect</a>
 						</li>
 					</ul>

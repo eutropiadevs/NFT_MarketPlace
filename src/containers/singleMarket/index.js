@@ -6,6 +6,7 @@ import Tabs from "../../components/tabs";
 
 const SingleProduct = () => {
 	const showSingle = useSelector((store) => store.detail.singleItem);
+	console.log(showSingle)
 	return (
 		<>
 			<div>
