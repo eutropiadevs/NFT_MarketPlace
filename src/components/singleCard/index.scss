@@ -1,11 +1,10 @@
-
-
 .single-card{
     width: 250px;
     height: 220px;
     position: relative;
     
     &_container{
+        border-radius: 5px;
         position: absolute;
         width: 100%;
         z-index: 11;
@@ -16,5 +15,6 @@
     img{
        width: 15rem;
        height: 14rem;
+       border-radius: 5px;
     }
 }

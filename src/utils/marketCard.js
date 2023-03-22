@@ -7,6 +7,7 @@ export const market = [
 	{
 		id: 1,
 		text1: "MYSTICFIGURE#01",
+		author: "Nft name another title",
 		para: "Toalyg",
 		btn: "Place a bid",
 		text2: "1.00ETH",
@@ -17,6 +18,7 @@ export const market = [
 	{
 		id: 2,
 		text1: "MYSTICFIGURE#01",
+		author: "Nft name another title",
 		para: "Toalyg",
 		btn: "Place a bid",
 		text2: "1.00ETH",
@@ -27,6 +29,7 @@ export const market = [
 	{
 		id: 3,
 		text1: "MYSTICFIGURE#01",
+		author: "Nft name another title",
 		para: "Toalyg",
 		btn: "Place a bid",
 		text2: "1.00ETH",
@@ -37,6 +40,7 @@ export const market = [
 	{
 		id: 4,
 		text1: "MYSTICFIGURE#01",
+		author: "Nft name another title",
 		para: "Toalyg",
 		btn: "Place a bid",
 		text2: "1.00ETH",

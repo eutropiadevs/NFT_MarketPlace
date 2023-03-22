@@ -1,8 +1,16 @@
 
 .market-section{
     display: flex;
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 2rem;
+}
+
+@media (max-width:800px){
+    .market-section{
+        flex-direction: column-reverse;
+        // justify-content: flex-start;
+        padding-top: 20rem;
+    }
 }
