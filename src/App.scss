@@ -55,27 +55,22 @@
 		}
 
 
-  .app_container {
-  // margin-top: 3rem;
-}
 
-.max_width {
-  max-width: 100vw;
-  display: block;
-  margin: auto;
+// .max_width {
+//   max-width: 100vw;
+//   // display: block;
+//   margin: auto;
   // padding: 0 20px;
-}
+// }
 
 
    h1{
-        // text-align: center;
-        font-size: 2rem;
         padding: 2rem 0;
     }
 
-    @media (max-width: 600px){
-      h1{
-        font-size: 1rem;
-        // padding: 0%;
-      }
-    }
+    // @media (max-width: 809px){
+    //   h1{
+    //     font-size: 0.2rem;
+    //     // padding: 0%;
+    //   }
+    // }

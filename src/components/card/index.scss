@@ -1,12 +1,12 @@
 
 
-
 .card-section{
-    width: 300px;
-    height: 470px;
+    width: 30rem;
+    height: 30rem;
     // padding: 0 20px;
     // transform: translate(38%, 24%);
 border: 1px solid black;
+background-color: #fff;
     &_head{
         display: flex;
         justify-content: space-between;
@@ -23,7 +23,8 @@ border: 1px solid black;
         margin-top: -1.2rem;
     }
     &_info{
-        margin: 0 1rem;
+        
+        padding: 0 1rem;
         .person-img {
 			display: flex;
 			img {
@@ -40,9 +41,10 @@ border: 1px solid black;
 		}
     }
     .info-container{
+        // background: rgba(165, 162, 162, 0.603);
         display: flex;
         justify-content: space-between;
-        margin: 0.6rem 0;
+        padding: 0.6rem 0;
         &_first, &_second{
             h5, h3{
                 font-weight: 800;
@@ -61,5 +63,11 @@ border: 1px solid black;
         .align{
             text-align: end;
         }
+    }
+}
+
+@media (max-width:890px){
+    .card-section{
+        width: 20rem;
     }
 }

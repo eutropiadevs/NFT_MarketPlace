@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./index.scss";
 
 const Navbar = () => {
-	// const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 
 	return (
 		<>
@@ -13,16 +13,16 @@ const Navbar = () => {
 						<div className="logo_container">
 							<h3>Logo</h3>
 						</div>
-						{/* <div className="toggle" onClick={() => setOpen(!open)}>
+						<div className="toggle" onClick={() => setOpen(!open)}>
 							<p>Logo</p>
-						</div> */}
-						{/* <div className={open ? "links_container new" : "links_container"}>
+						</div>
+						<div className={open ? "links_container new" : "links_container"}>
 							{open && (
 								<div className="close-btn" onClick={() => setOpen(!open)}>
 									&#9747;
 								</div>
-							)} */}
-							<div className="links_container">
+							)}
+							{/* <div className="links_container"> */}
 								<div className="links">
 									<ul>
 										<li>

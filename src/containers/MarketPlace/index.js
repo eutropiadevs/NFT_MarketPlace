@@ -2,7 +2,6 @@ import React from "react";
 import Cards from "../../components/cards";
 import MarketCard from "../../components/marketCards";
 import Market from "../../components/marketPlaceCard";
-import SingleProduct from "../singleMarket";
 import './index.scss'
 
 const MarketPlace = () => {

@@ -1,19 +1,15 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./index.scss";
-import { useParams } from "react-router-dom";
-import { display } from "../../features/detail/detailSlice";
-import { showSingle } from "../../features/detail/detailSlice";
 import { useState } from "react";
-import { items } from "../../utils/singleCard";
+// import { items } from "../../utils/singleCard";
 
 const SingleProduct = () => {
-	const { id } = useParams();
 	const showSingle = useSelector((store) => store.detail.singleItem);
-	console.log(showSingle);
-  const [data, setData] = useState(items)
+	//   const [data, setData] = useState(items)
+
 	const [activeTab, setActiveTab] = useState(0);
-console.log(data);
+	
 	const handleTabClick = (tabIndex) => {
 		setActiveTab(tabIndex);
 	};
