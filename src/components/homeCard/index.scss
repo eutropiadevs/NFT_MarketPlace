@@ -1,3 +1,12 @@
 .card-summary{
     width: 340px;
+    height: 30rem;
+    .summary-img{
+       img{
+        height: 30rem;
+       }
+    }
+    &_info{
+        top: 76%;
+    }
 }

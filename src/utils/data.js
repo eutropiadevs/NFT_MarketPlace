@@ -2,14 +2,14 @@ export const data = [
 	{
 		id: 1,
 		value: "78k",
-		user: " Active users",
-		hr: <hr />,
+		user: " Active ",
+		hr: <hr style={{ border: "0.5px solid gray" }} />,
 	},
 	{
 		id: 2,
 		value: "78k",
 		user: " At works",
-		hr: <hr />,
+		hr: <hr style={{ border: "0.5px solid gray" }} />,
 	},
 	{
 		id: 3,

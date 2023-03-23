@@ -11,8 +11,16 @@
       gap: 1rem;
     }
     &_img{
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
+    }
+    &_content{
+        h4{
+            font-size: 0.7rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
     }
 }

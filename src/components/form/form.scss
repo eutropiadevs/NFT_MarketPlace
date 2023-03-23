@@ -1,0 +1,25 @@
+@import '../../assets/variables.scss';
+
+.form-label{
+//     margin: 2rem 0;
+//    font-size: 1.2rem;
+//    font-weight: 600;
+//     text-align: start;
+flex: 1;
+
+}
+.form-input{
+   flex: 2;
+     padding: .5rem ;
+    //  background: rgb(84, 83, 83);
+    background: rgba(84, 84, 84, 0.355);
+     border: .7px solid rgb(75, 75, 75);
+     color: $white;
+     width: 100%;
+     margin: 1rem 0;
+}
+.form-row{
+    // display: flex;
+    // justify-content: center;
+    width: 40vw;
+}

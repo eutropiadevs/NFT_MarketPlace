@@ -1,3 +1,5 @@
+@import '../../assets/variables.scss';
+
 @media (max-width: 809px){
   .client-section_item{
     flex-direction: column;
@@ -9,6 +11,7 @@
 
 .client-section{
   background: rgba(0, 0, 0, 0.343);
+  color: rgb(117, 116, 116);
     &_item{
     display: flex;
     justify-content: center;
@@ -24,6 +27,6 @@
     }
 }
 .item:hover{
-  color: red;
+  color: $white;
   cursor: pointer;
 }

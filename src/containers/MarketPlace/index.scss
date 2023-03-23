@@ -1,16 +1,27 @@
+@import '../../assets/variables.scss';
+
+.market{
+	background: $bg-color;
+	// height: 100vh;
+}
+
 .market-section {
 	display: flex;
 	height: 110vh;
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
-    background: rgba(44, 38, 161, 0.397);
-    margin-bottom: 2rem;
+  background: $bg-color;
+	color: $white;
+    // margin-bottom: 2rem;
 }
 
 @media (max-width: 800px) {
 	.market-section {
 		flex-direction: column-reverse;
 		padding-top: 20rem;
+	}
+	.market{
+		padding-top: 60rem;
 	}
 }

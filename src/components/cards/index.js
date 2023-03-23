@@ -1,17 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import Card from "../card";
 import "./index.scss";
-import { cardData } from "../../utils/cardData";
 
-const Cards = () => {
+
+const Cards = ({label,data,style}) => {
 	const containerRef = useRef(null);
+	console.log(data)
 
 	useEffect(() => {
 		const container = containerRef.current;
 
 		let scrollInterval = setInterval(() => {
 			container.scroll({
-				left: container.scrollLeft + 40, 
+				left: container.scrollLeft + 300, 
 				behavior: "smooth",
 			});
 
@@ -21,7 +22,7 @@ const Cards = () => {
 			) {
 				container.scrollLeft = 0;
 			}
-		}, 1000); 
+		}, 2000); 
 
 		return () => clearInterval(scrollInterval);
 	}, []);
@@ -30,7 +31,7 @@ const Cards = () => {
 		<>
 			<div className="latest-drop">
 				<div className="latest-drop_title">
-					<h1>Latest drop</h1>
+					<h1>{label}</h1>
 					<div className="btn-container">
 						<button>View All</button>
 					</div>
@@ -41,7 +42,7 @@ const Cards = () => {
 						ref={containerRef}
 						style={{ overflow: "scroll", behavior: "smooth" }}
 					>
-						{cardData.map((item, index) => {
+						{data.map((item, index) => {
 							return (
 								<div className="card-width" key={index}>
 									<Card {...item} />
@@ -49,19 +50,6 @@ const Cards = () => {
 							);
 						})}
 					</div>
-					{/* <div className="card-width">
-							<Card />
-						</div>
-						<div className="card-width">
-							<Card />
-						</div>
-						<div className="card-width">
-							<Card />
-						</div>
-						<div className="card-width">
-							<Card />
-						</div> */}
-					{/* </div> */}
 				</div>
 			</div>
 		</>

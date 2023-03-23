@@ -6,7 +6,10 @@ const initialState = {
     market: market,
     cardData: cardData,
    singleItem: {},
-   singleDisplay: {}
+   singleDisplay: {},
+   totalCards: 0,
+   numOfPages: 1,
+   page: 1
 };
 
 
@@ -26,9 +29,12 @@ const detailSlice = createSlice({
                return item.id === action.payload;
             })
 
+        },
+        changePage: (state, {payload})=>{
+            state.page = payload;
         }
     }
 })
 
-export const {showSingle, display} = detailSlice.actions;
+export const {showSingle, display, changePage} = detailSlice.actions;
 export default detailSlice.reducer;

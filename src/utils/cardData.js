@@ -1,5 +1,5 @@
-import img from '../assets/img/diamond.jpg'
 
+import img1 from '../assets/img/img2.jpg'
 
 
 export const cardData = [
@@ -11,7 +11,7 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$3,618.36",
 		btn1: "View Artwork",
-		img: img,
+		img: img1,
 	},
 	{
 		id: 2,
@@ -21,7 +21,7 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$3,618.36",
 		btn1: "View Artwo",
-		img: img,
+		img: img1,
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$3,618.36",
 		btn1: "View Artwork",
-		img: img,
+		img: img1,
 	},
 	{
 		id: 4,
@@ -41,7 +41,7 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$3,618.36",
 		btn1: "View Artwork",
-		img: img,
+		img: img1,
 	},
 	{
 		id: 5,
@@ -51,6 +51,46 @@ export const cardData = [
 		text2: "1.00ETH",
 		para1: "$4,618.36",
 		btn1: "View Artwork",
-		img: img,
+		img: img1,
+	},
+	{
+		id: 6,
+		text1: "100ETHICON#01",
+		para: "Toaling wang",
+		btn: "Place a bid",
+		text2: "1.00ETH",
+		para1: "$4,618.36",
+		btn1: "View Artwork",
+		img: img1,
+	},
+	{
+		id: 7,
+		text1: "100ETHICON#01",
+		para: "Toaling wang",
+		btn: "Place a bid",
+		text2: "1.00ETH",
+		para1: "$4,618.36",
+		btn1: "View Artwork",
+		img: img1,
+	},
+	{
+		id: 8,
+		text1: "100ETHICON#01",
+		para: "Toaling wang",
+		btn: "Place a bid",
+		text2: "1.00ETH",
+		para1: "$4,618.36",
+		btn1: "View Artwork",
+		img: img1,
+	},
+	{
+		id: 9,
+		text1: "100ETHICON#01",
+		para: "Toaling wang",
+		btn: "Place a bid",
+		text2: "1.00ETH",
+		para1: "$4,618.36",
+		btn1: "View Artwork",
+		img: img1,
 	},
 ];

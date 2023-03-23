@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import Modal from "../Modal";
 // import { NavLink } from "react-router-dom";
 import "./index.scss";
 
 const Navbar = () => {
 	 const [isOpen, setIsOpen] = useState(false);
-
+	const [activeButton, setActiveButton] = useState("home");
 		function toggleMenu() {
 			setIsOpen(!isOpen);
 		}
+
+
 	return (
 		<>
 			<nav className="navbar">
@@ -18,21 +21,43 @@ const Navbar = () => {
 					</button>
 				</div>
 				<div>
-					<ul className={`navbar-menu ${isOpen ? "is-open navbar-nav" : "navbar-nav"}`}>
-						<li className="nav-item">
+					<ul
+						className={`navbar-menu ${
+							isOpen ? "is-open navbar-nav" : "navbar-nav"
+						}`}
+					>
+						<li
+							onClick={() => setActiveButton("home")}
+							className={
+								activeButton === "home" ? "active nav-item" : "nav-item"
+							}
+						>
 							<a href="/">Home</a>
 						</li>
-						<li className="nav-item">
+						<li
+							onClick={() => setActiveButton("marketPlace")}
+							className={
+								activeButton === "marketPlace" ? "active nav-item" : "nav-item"
+							}
+						>
 							<a href="/marketPlace">MarketPlace</a>
 						</li>
-						<li className="nav-item">
+						<li
+							onClick={() => setActiveButton("creator")}
+							className={
+								activeButton === "creator" ? "active nav-item" : "nav-item"
+							}
+						>
 							<a href="/creator">Creator</a>
 						</li>
-						<li className="nav-item connect-btn">
-							<a href="/connect">Connect</a>
+						<li>
+							<Modal />
 						</li>
 					</ul>
 				</div>
+				{/* <div>
+					<Modal />
+				</div> */}
 			</nav>
 		</>
 	);

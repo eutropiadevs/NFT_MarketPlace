@@ -1,5 +1,5 @@
 import React from 'react'
-import { items } from "../../utils/singleCard";
+import { collection } from "../../utils/singleCard";
 import './index.scss'
 	
 
@@ -8,7 +8,7 @@ const TabItem = () => {
   return (
 		<>
 			<div className="tab-items">
-				{items.map((item) => {
+				{collection.map((item) => {
 					return (
 						<div className='tab-items_single' key={item.id}>
 							<img className="tab-items_img" src={item.image} alt="img" />

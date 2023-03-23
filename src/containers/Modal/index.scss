@@ -1,0 +1,26 @@
+.open-modal{
+    position: absolute;
+   transform: translate(-40%, 7%);
+    &_sub{
+        border: 1px solid rgb(193, 191, 191);
+        border-radius: 4px;
+        background: #ebe8e8;
+        padding: 1.6rem 2rem;
+        color: black;
+        text-align: center;
+        h2{
+            font-size: 1.3rem;
+      font-weight: 400;
+        }
+        button{
+            font-size: 0.8rem;
+            margin-top: 1.4rem;
+        }
+    }
+
+}
+.modal-btn{
+    button{
+        width: 8rem;
+    }
+}

@@ -9,7 +9,7 @@ const SingleProduct = () => {
 	console.log(showSingle)
 	return (
 		<>
-			<div>
+			<div className="nft">
 				<div className="nft-product-page">
 					<div className="nft-image">
 						<img src={showSingle.img} alt="NFT" />

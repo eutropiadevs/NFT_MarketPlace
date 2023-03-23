@@ -1,3 +1,7 @@
+@import '../../assets/variables.scss';
+
+
+
 @media (max-width: 809px) {
 	.main-section_first{
 		padding: 1rem;
@@ -7,33 +11,47 @@
 	}
 	
 }
+.main-container{
+	position: relative;
+		background: $bg-color;
+}
 
 .main-section {
-	background: rgba(58, 40, 190, 0.529);
+
 	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	width: 70vw;
+	margin: auto;
 	&_first {
-		padding: 6rem;
+		color: $white;
+		padding: 6rem 0rem;
 		.first-content {
 			h1 {
 				font-size: 4rem;
 				padding: 1rem 0;
 				display: inline-block;
+				line-height: 4.3rem;
 			}
 		}
 		.content-para {
 			p {
-				padding: 30px 0;
+				padding: 1.6rem 0;
 				display: inline-block;
+				color: $light-color;
+				line-height: 1.5rem;
+				font-weight: 300;
 			}
 		}
 
 		.section-a {
 			display: flex;
-			width: 300px;
+			justify-content: center;
+			width: 20rem;
 			margin-top: 3rem;
 			padding: 1rem .7rem;
 			gap: 1.4rem;
-			background: rgba(230, 230, 230, 0.329);
+			background: rgba(139, 138, 138, 0.293);
 			h3 {
 				font-size: 1.6rem;
 			}
@@ -45,10 +63,11 @@
 			display: flex;
 			gap: 2rem;
 		}
+		
 	}
 	&_second {
 		display: block;
 		width: 60vw;
-		margin: 10rem auto;	
+		margin: 8rem auto;	
 	}
 }

@@ -11,7 +11,7 @@ const NftComponents = () => {
 			icon: <FaWallet />,
 			title: "Connect Wallet",
 			text: `A paragraph is a series of related sentences
-             developing a central idea, called the topic. `,
+             developing a `,
 			color: "pink",
 		},
 		{
@@ -19,7 +19,7 @@ const NftComponents = () => {
 			icon: <FaWeightHanging />,
 			title: "Nft MarketPlace",
 			text: `A paragraph is a series of related sentences
-             developing a central idea, called the topic. `,
+             developing a  `,
 			color: "blue",
 		},
 		{
@@ -27,7 +27,7 @@ const NftComponents = () => {
 			icon: <FaRegArrowAltCircleDown />,
 			title: "Collect NFT",
 			text: `A paragraph is a series of related sentences
-             developing a central idea, called the topic.`,
+             developing a `,
 			color: "pink",
 		},
 	];
