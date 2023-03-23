@@ -1,0 +1,21 @@
+@import '../../assets/variables.scss';
+
+.latest-drop_cards_items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.7rem;
+    margin: 2rem 0;
+    
+    .tab-items_content{
+        p{
+            color: $design-color;
+            font-weight: 300;
+           padding-top: 0.4rem;
+        }
+    }
+}
+@media (max-width: 800px){
+    .latest-drop_cards_items{
+        grid-template-columns: max-content;
+    }
+}

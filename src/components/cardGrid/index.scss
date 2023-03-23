@@ -1,0 +1,25 @@
+.latest-drop_cards_item{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);   
+ gap: 1.7rem;
+}
+.latest-drop_head{
+    text-align: center;
+    h1{
+        font-size: 2rem;
+    }
+    .btn-container{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: 2rem;
+        button{
+            width: 7rem;
+        }
+    }
+}
+@media (max-width: 1000px){
+    .latest-drop_cards_item{
+        grid-template-columns: max-content;
+    }
+}

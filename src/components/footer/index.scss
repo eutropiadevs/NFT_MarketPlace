@@ -1,0 +1,64 @@
+
+// @import '../../assets/img/diamond1.jpg';
+.subscribe{
+    border: 1px solid rgb(40, 39, 39);
+    // border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    input{
+        padding:0 0.6rem;
+        width: 17rem;
+        border: none;
+    }
+    button{
+       border-radius: 0;
+    }
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    // justify-content: center;
+    gap: 8rem;
+    align-items: center;
+    background-image: url('../../assets/img/diamond1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    margin: 4rem auto;
+    border: 1px solid black;
+    position: relative;
+    height: 15rem;
+    color: #fff;
+    h1{
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        color: #bab7b7;
+    }
+    // &_img{
+    //     img{
+    //         width: 20rem;
+    //         height: 16rem;
+    //     }
+    // }
+&_info, &_img{
+    z-index: 111;
+//    flex: 1;
+   
+}
+
+    .overlay{
+        position: absolute;
+        background: rgba(54, 41, 61, 0.449);
+         width: 100%;
+         height: 100%;
+        top: 0;
+        z-index: 11;
+        left: 0%;
+    }
+}

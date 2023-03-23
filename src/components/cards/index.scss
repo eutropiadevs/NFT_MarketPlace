@@ -1,9 +1,13 @@
+@import '../../assets/variables.scss';
+
 .latest-drop{
     width: 70vw;
     margin: auto;
-    //  overflow: scroll;
+    padding: 3rem 0;
+  color: $white;
+     background: $bg-color;
     &_cards{
-         overflow: scroll;
+        //  overflow: scroll;
         &_flow{
  display: flex;
     gap: 1rem;
@@ -16,11 +20,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1rem;
-        padding: .2rem;
-        h1{
-            border-bottom: 3px solid gray;
-        }
+        margin-bottom: 3rem;
+        padding: 2rem 0;
+        // h1{
+        //     border-bottom: 3px solid gray;
+        // }
     }
    
 }

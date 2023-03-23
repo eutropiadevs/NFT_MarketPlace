@@ -4,6 +4,11 @@ import { data } from "../../utils/data";
 import Company from "../../components/company";
 import NftComponents from "../../components/nftsComp";
 import HomeCard from "../../components/homeCard";
+import Collection from "../../components/collection";
+import { items } from "../../utils/singleCard";
+import Cards from "../../components/cards";
+import CardGrid from "../../components/cardGrid";
+import Footer from "../../components/footer";
 
 const Home = () => {
 	return (
@@ -17,8 +22,7 @@ const Home = () => {
 						<div className="content-para">
 							<p>
 								Simply put, a paragraph is a collection of sentences all related
-								to a central topic, idea, or theme. Paragraphs act as structural
-								tools for writers to organize their
+								to a central topic, idea, or theme. Paragraphs 
 							</p>
 						</div>
 						<div className="btn-container">
@@ -47,9 +51,15 @@ const Home = () => {
 				<div>
 					<Company />
 				</div>
+
 				<NftComponents />
 				{/* <Cards /> */}
-			
+
+				<Cards label={"Top Collections"} data={items} />
+				<Collection />
+				<CardGrid />
+				<Footer />
+				<hr></hr>
 			</section>
 		</>
 	);

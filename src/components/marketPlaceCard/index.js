@@ -1,13 +1,14 @@
 import React from 'react'
-import SingleCard from '../single';
+// import SingleCard from '../single';
+import HomeCard from '../homeCard';
 import './index.scss'
 
 const Market = () => {
   return (
 		<div className="market-card">
 			<div className='market-card_home'>
-				{/* <HomeCard /> */}
-                <SingleCard/>
+				<HomeCard />
+                {/* <SingleCard/> */}
 			</div>
 		</div>
 	);

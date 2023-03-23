@@ -17,13 +17,13 @@ const Tabs = () => {
 					className={`tabs__button ${activeTab === 0 ? "active" : ""}`}
 					onClick={() => handleTabClick(0)}
 				>
-					Tab 1
+					History
 				</button>
 				<button
 					className={`tabs__button ${activeTab === 1 ? "active" : ""}`}
 					onClick={() => handleTabClick(1)}
 				>
-					Tab 2
+					Bids
 				</button>
 				<button
 					className={`tabs__button ${activeTab === 2 ? "active" : ""}`}

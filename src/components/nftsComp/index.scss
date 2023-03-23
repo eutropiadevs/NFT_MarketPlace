@@ -1,3 +1,5 @@
+@import '../../assets/variables.scss';
+
 @media (max-width: 809px){
     .card-nfts_container{
         flex-direction: column;
@@ -6,9 +8,13 @@
 
 .card-nfts{
       padding: 2rem;
+      margin: 2rem 0;
+        color: $white;
     h1{
         text-align: center;
-        margin: 2rem 0;
+        // margin: 2rem 0;
+        padding-bottom: 2.3rem ;
+        font-size: 2rem;
     }
     &_container{
         display: flex;
@@ -16,17 +22,21 @@
         margin: auto;
         gap: 1rem;
         .card{
-            border: 1px solid black;
+           background: rgba(66, 66, 67, 0.482);
             padding: 1.4rem 1.2rem;
         }
     }
     &_title {
         padding-top: 1rem;
+      
         h5{
-            padding: 1rem 0;
+            padding: 0.4rem 0;
         }
        p{
         font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.3rem;
+        color: rgb(194, 192, 195);
        }
     }
 }

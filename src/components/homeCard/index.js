@@ -12,10 +12,10 @@ const HomeCard = () => {
 	return (
 		<>
 			<div className="card-section card-summary">
-				<div className="card-section_img">
+				<div className="card-section_img summary-img">
 					<img className="main-img" src={diamond} alt="diamond" />
 				</div>
-				<div className="card-section_info">
+				<div className="card-section_info card-summary_info">
 					<div className="person-img">
 						<img src={img1} alt="img" />
 						<img src={img2} alt="img1" />

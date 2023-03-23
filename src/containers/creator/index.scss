@@ -1,0 +1,13 @@
+@import '../../assets/variables.scss';
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    // align-items: flex-end;
+    height: 100vh;
+    border: 1px solid black;
+    background: $bg-color;
+    color: $white;
+ padding-top: 6rem;
+ overflow: scroll;
+}

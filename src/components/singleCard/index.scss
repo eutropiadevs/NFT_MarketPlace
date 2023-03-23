@@ -1,27 +1,28 @@
 .single-card{
-    width: 250px;
-    height: 220px;
+    width: 25rem;
+    height: 23rem;
     position: relative;
     
     &_container{
-        border-radius: 5px;
+        border-radius: 2px;
         position: absolute;
         width: 100%;
         z-index: 11;
-        top: -170%;
-        background: rgba(255, 0, 0, 0.636);
-        padding: 0.6rem 0.3rem;
+        top: -210%;
+        background: #727171c4;;
+        padding: 0.8rem 0.7rem;
         color: #fff;
         h3{
             font-size: .8rem;
         }
         p{
             font-size: .7rem;
+            padding-top: 0.2rem;
         }
     }
     img{
        width: 15rem;
        height: 14rem;
-       border-radius: 4px;
+       border-radius: 2px;
     }
 }

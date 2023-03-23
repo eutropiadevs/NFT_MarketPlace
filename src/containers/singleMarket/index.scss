@@ -1,3 +1,12 @@
+@import '../../assets/variables.scss';
+
+.nft{
+	 background: $bg-color;
+   color: $white;
+   height: 140vh;
+
+}
+
 .nft-product-page {
 	display: flex;
 	flex-direction: column;
@@ -5,14 +14,16 @@
 	max-width: 75vw;
     padding-top: 8rem;
 	margin: 0 auto;
-  
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
 		align-items: flex-start;
 		gap: 2rem;
 	}
 }
-
+.nft-description{
+	color: rgb(126, 124, 124);
+	line-height: 1.4rem;
+}
 .nft-image {
 	width: 100%;
 	margin-bottom: 1rem;
@@ -43,6 +54,7 @@
 	p {
 		margin: 0 0 1rem;
 		font-size: .8rem;
+		
 	}
 
 	h1 {
