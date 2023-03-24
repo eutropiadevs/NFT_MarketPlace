@@ -1,0 +1,30 @@
+@import '../../assets/variables.scss';
+
+.table-view{
+ 
+ color: $white;
+  
+}
+.list-view{
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+th,td{
+    width: 9rem;
+    height: 5rem;
+    text-align: center;
+}
+}
+.title-div{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    align-items: center;
+    color: $white;
+    text-decoration: none;
+    img{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 4px;
+    }
+}

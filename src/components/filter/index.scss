@@ -1,0 +1,47 @@
+@import '../../assets/variables.scss';
+
+.initial-section{
+  color: $white;
+  max-width: 80vw;
+  margin: auto;
+  padding: 7rem 0;
+    .initial-view{
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    img{
+        width: 15rem;
+        height: 9rem;
+    }
+    p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    &_middle{
+        strong{
+            font-size: 0.8rem;
+            line-height: 2rem;
+        }
+    }
+    &_end{
+        strong{
+            line-height: 2.5rem;
+        }
+    }
+}
+}
+.filter-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    margin: 7rem 0;
+  .links{
+    color: $white;
+  }
+}
+
+

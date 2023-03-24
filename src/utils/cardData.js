@@ -12,6 +12,7 @@ export const cardData = [
 		para1: "$3,618.36",
 		btn1: "View Artwork",
 		img: img1,
+		category: 'new'
 	},
 	{
 		id: 2,

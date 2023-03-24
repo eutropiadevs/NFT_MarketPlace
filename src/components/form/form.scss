@@ -23,3 +23,8 @@ flex: 1;
     // justify-content: center;
     width: 40vw;
 }
+@media (max-width: 800px){
+  .form-row{
+    width: 90vw;
+  }
+}

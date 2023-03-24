@@ -4,24 +4,59 @@
 	background: $bg-color;
 	// height: 100vh;
 }
+.marketPlace-container{
+	background: $bg-color;
+	color: $white;
+	padding-top: 10rem;
+	// height: 100vh;
+}
 
 .market-section {
 	display: flex;
-	height: 110vh;
+	// height: 110vh;
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
-  background: $bg-color;
-	color: $white;
+//   background: $bg-color;
+// 	color: $white;
     // margin-bottom: 2rem;
 }
 
 @media (max-width: 800px) {
 	.market-section {
-		flex-direction: column-reverse;
-		padding-top: 20rem;
+		flex-direction: column;
+		// padding-top: 20rem;
+		justify-items: center;
 	}
 	.market{
-		padding-top: 60rem;
+		// padding-top: 50rem;
+	}
+}
+.search-container{
+	padding-top: 7rem;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	button{
+		width: 6rem;
+	}
+	form{
+		width: 50vw;
+		background: $white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1rem;
+		input{
+			padding: 0.5rem ;
+			border: none;
+			a{
+				color: black;
+			}
+		}
+		span{
+			color: black;
+		}
+
 	}
 }

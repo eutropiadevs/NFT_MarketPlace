@@ -17,5 +17,6 @@
 @media (max-width: 800px){
     .latest-drop_cards_items{
         grid-template-columns: max-content;
+        justify-content: center;
     }
 }

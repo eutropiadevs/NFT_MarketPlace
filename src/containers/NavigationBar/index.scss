@@ -1,15 +1,19 @@
 @import '../../assets/variables.scss';
 
 .navbar {
-  position: fixed;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  position: fixed;
+  // width: 100%;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem 0;
   // background-color: rgba(98, 94, 94, 0.596);
   color: $white;
-  z-index: 11;
+  z-index: 111;
   .connect-btn{
     border-radius: 6px;
    
@@ -28,9 +32,9 @@
 
 .navbar-brand a {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 800;
   color: #fff;
-  padding: 0 6rem;
+  // padding: 0 6rem;
 }
 
 .navbar-toggle {
@@ -45,7 +49,7 @@
 
 .navbar-menu.is-open {
   flex-direction: column;
-  // display: block;
+  display: block;
   position: absolute;
   top: 50px;
   left: 0;
@@ -77,17 +81,22 @@
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .navbar-brand{
+    display: flex;
+    // justify-content: space-around;
+    
+  }
 
   .navbar-toggle {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    display: block;
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    position: absolute;
-    right: 10%;
+    // position: absolute;
+    // right: 10%;
   }
   .navbar-toggle:hover{
     background: none;
