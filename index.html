@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>XRP ledger testing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
+        <script src="/js/marketplace.js"></script>
+        <script src="/js/uploadFiles.js"></script>
+        <script src="https://unpkg.com/xrpl@2.2.0/build/xrpl-latest-min.js"></script>
+        <script src="https://unpkg.com/xrpl@2.2.0"></script>
+        <script>
+            if (typeof module !== "undefined") {
+              const xrpl = require('xrpl')
+            }
+          </script>
+    </head>
+    <body>
+        
+        <button type="button" onClick="createAccount()">Create Account</button>
+        <input type="text" id="createdAddress"></input>
+        <input type="text" id="createdSeed"></input><br><br>
+        <button type="button" onClick="useAccount()">Use Account</button>
+        <input type="text" id="useAddress" placeholder="Account Address"></input>
+        <input type="text" id="useSeed" placeholder="Account Seed"></input><br><br>
+        <button type="button" onClick="sendXRP()">Send XRP</button>
+        <input type="text" id="dAddress" placeholder="Destination Address"></input>
+        <input type="text" id="sendAmount" placeholder="Amount to send"></input><br><br>
+        <button type="button" onClick="mintToken()">Mint NFT</button>
+        <input type="text" id="nftUrl" placeholder="NFT url"></input>
+        <input type="text" id="tokenMintfees" placeholder="Token Mint Fees"></input><br><br>
+        <button type="button" onClick="getTokens()">Get NFT List</button>
+        <button type="button" onClick="setPriceForNft()">Get NFT Ids</button>
+        <input type="text" id="enterPrice" placeholder="NFT price"></input><br><br>
+        <button type="button" onClick="burnToken()">Burn NFT </button>
+        <button type="button" onClick="createSellOffer()">Sell NFT</button>
+        <button type="button" onClick="acceptSellOffer()">buy NFT</button>
+        
+        <input type="text" id="burnTkn" placeholder="Token ID"></input><br><br>
+        <button type="button" onClick="transferNFT()">Transfer NFT</button>
+        <button type="button" id="uploadFile" >Upload File</button>
+        <script src="" async defer></script>
+    </body>
+</html>
