@@ -12,45 +12,50 @@ const ListView = () => {
 	return (
 		<>
 			<div className="list-view">
-				<table className="table-view">
-			
-						
-							<tr>
-								<th>Collection</th>
-								<th>Floor Price</th>
-								<th>Best Offer</th>
-								<th>24H Vol</th>
-								<th>7D Vol</th>
-								<th>Owners</th>
-								<th>For Sale</th>
-							</tr>
+				<table className="table-view" scroll={{ x: 600 }}>
+					<tr>
+						<div>
+							<th>Collection</th>
+							<th>Floor Price</th>
+							<th>Best Offer</th>
+							<th>24H Vol</th>
+							<th>7D Vol</th>
+							<th>Owners</th>
+							<th>For Sale</th>
+						</div>
+					</tr>
 
 					{list.map((item) => {
 						return (
-							<tr>
-								<td>
+							<tr className="table-data">
+								<div className="table-data_content">
 									<Link
 										to="/marketPlace/single"
 										onClick={() => dispatch(filterCard(item.category))}
-										className="title-div"
+										className="title-di"
 									>
-										<p>
-											{item.id}
-											<span>.</span>
-										</p>
-										<img src={item.img} alt="img" />
-										<h5>{item.text1}</h5>
+										<td>
+											<div className="title-div">
+												<p>
+													{item.id}
+													<span>.</span>
+												</p>
+												<img src={item.img} alt="img" />
+												<h5>{item.text1}</h5>
+											</div>
+										</td>
+										<td>{item.para}</td>
+										<td>{item.btn}</td>
+										<td>{item.text2}</td>
+										<td>{item.para1}</td>
+										<td>{item.btn1}</td>
+										<td>
+											{item.sale}
+											<span>{item.outOf}</span>
+										</td>
 									</Link>
-								</td>
-								<td>{item.para}</td>
-								<td>{item.btn}</td>
-								<td>{item.text2}</td>
-								<td>{item.para1}</td>
-								<td>{item.btn1}</td>
-								<td>
-									{item.sale}
-									<span>{item.outOf}</span>
-								</td>
+									{/* <hr className="horizontal" /> */}
+								</div>
 							</tr>
 						);
 					})}

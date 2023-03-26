@@ -1,6 +1,7 @@
 .latest-drop_cards_item{
  display: grid;
  grid-template-columns: repeat(3, 1fr);   
+ justify-items: center;
  gap: 1.7rem;
 }
 .latest-drop_head{

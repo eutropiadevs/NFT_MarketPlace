@@ -21,11 +21,14 @@
         //  overflow: scroll;
         &_flow{
  display: flex;
+ justify-content: center;
+ align-items: center;
     gap: 1rem;
  
         }
         
-    // width: 70vw;
+    max-width: 70vw;
+    margin: auto;
     }
     &_title{
         display: flex;

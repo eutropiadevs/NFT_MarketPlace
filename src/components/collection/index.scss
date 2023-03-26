@@ -3,6 +3,7 @@
 .latest-drop_cards_items{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 3.7rem;
     margin: 2rem 0;
     

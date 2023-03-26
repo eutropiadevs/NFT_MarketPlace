@@ -12,7 +12,7 @@ const initialState = {
 	totalCards: 0,
 	numOfPages: 1,
 	page: 1,
-	gridSet: true,
+	gridSet: false,
 	filteredData: [],
 };
 

@@ -18,6 +18,8 @@
     }
     &_container{
         display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 70vw;
         margin: auto;
         gap: 1rem;

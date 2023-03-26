@@ -53,13 +53,13 @@ const Home = () => {
 				</div>
 
 				<NftComponents />
-				{/* <Cards /> */}
+				{/* {/* <Cards /> */}
 
 				<Cards label={"Top Collections"} data={items} />
 				<Collection />
 				<CardGrid />
 				<Footer />
-				<hr></hr>
+				<hr></hr> 
 			</section>
 		</>
 	);

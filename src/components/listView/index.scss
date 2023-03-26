@@ -1,18 +1,49 @@
 @import '../../assets/variables.scss';
 
+@media (max-width: 600px){
+    th:not(:last-child,:first-child),td:not(:last-child,:first-child){
+        display: none;
+    }
+}
+
 .table-view{
- 
+//  max-width: 70vw;
  color: $white;
-  
+//    overflow: scroll;
 }
 .list-view{
     display: flex;
     justify-content: center;
     margin: 6rem 0;
+ 
+//    table{
+    // width: 80vw;
+//   max-width: 70vw;
+//   border-collapse: collapse;
+//    }
 th,td{
     width: 9rem;
-    height: 5rem;
+    height: 4rem;
+    padding: 1rem 0;
     text-align: center;
+    //  overflow: scroll;
+}
+.table-data{
+     
+     &_content{
+        max-width: 100vw;
+        border-bottom: 1px solid rgb(84, 83, 83);
+        margin: auto;
+
+     }
+     &_content:hover{
+            background: rgba(128, 128, 128, 0.293);
+            cursor: pointer;
+     }
+}
+td{
+    font-weight: 500;
+    color: rgb(203, 202, 200);
 }
 }
 .title-div{
@@ -27,4 +58,7 @@ th,td{
         height: 3.5rem;
         border-radius: 4px;
     }
+}
+.horizontal{
+    width: 4rem;
 }

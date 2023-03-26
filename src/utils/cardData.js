@@ -95,3 +95,9 @@ export const cardData = [
 		img: img1,
 	},
 ];
+
+
+
+//https://www.stargaze.zone/_next/data/tB_Ycw4EhyUrpjThN3IvQ/marketplace/stars1naw6qqrcrcv9msrvn2c6sjgqunwhe0l08kq3yzyrx75as6hsjufqer8eyx.json?contract=stars1naw6qqrcrcv9msrvn2c6sjgqunwhe0l08kq3yzyrx75as6hsjufqer8eyx
+
+//Request URL: https://graphql.mainnet.stargaze-apis.com/
